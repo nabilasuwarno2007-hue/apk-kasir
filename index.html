@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Kasir</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>SISTEM KASIR</h1>
+
+    <hr>
+
+    <h2>Input Barang</h2>
+
+    <label>Nama Barang</label><br>
+    <input type="text" id="namaBarang"><br><br>
+
+    <label>Harga</label><br>
+    <input type="number" id="harga"><br><br>
+
+    <label>Jumlah</label><br>
+    <input type="number" id="jumlah"><br><br>
+
+    <button id="tambahBarangBtn" type="button">Tambah Barang</button>
+
+    <hr>
+
+    <h2>Daftar Belanja</h2>
+
+    <table border="1">
+
+<thead>
+
+<tr>
+
+<th>No</th>
+<th>Nama Barang</th>
+<th>Harga</th>
+<th>Jumlah</th>
+<th>Subtotal</th>
+<th>Aksi</th>
+
+</tr>
+
+</thead>
+
+<tbody id="daftarBarang">
+
+</tbody>
+
+</table>
+
+    <hr>
+
+    <h2>Pembayaran</h2>
+
+ <h2>Pembayaran</h2>
+
+<p><b>Total :</b> Rp<span id="total">0</span></p>
+
+<label>Uang Bayar</label><br>
+<input type="number" id="bayar"><br><br>
+
+<p><b>Kembalian :</b> Rp<span id="kembalian">0</span></p>
+
+<button onclick="bayar()">Bayar</button>
+
+<script src="script.js"></script>
+
+</body>
